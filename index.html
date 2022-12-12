@@ -21,39 +21,41 @@
   <body>
     <!--Header-->
     <header class="page-header">
-      <div class="container page-header__container">
-        <nav class="main-nav">
-          <a class="logo link" href=""><span class="logo--accent">Web</span>Studio</a>
-
-          <ul class="site-nav list">
-            <li class="site-nav__item">
-              <a href="./index.html" class="site-nav__link link site-nav__link--current">Студія</a>
+      <div class="container">
+        <div class="page-header__container">
+          <nav class="main-nav">
+            <a class="logo link" href=""><span class="logo--accent">Web</span>Studio</a>
+  
+            <ul class="site-nav">
+              <li class="site-nav__item">
+                <a href="./index.html" class="site-nav__link link site-nav__link--current">Студія</a>
+              </li>
+              <li class="site-nav__item">
+                <a href="./portfolio.html" class="site-nav__link link">Портфоліо</a>
+              </li>
+              <li class="site-nav__item"><a href="" class="site-nav__link link">Контакти</a></li>
+            </ul>
+          </nav>
+  
+          <ul class="contacts">
+            <li class="contacts__item page-header__contacts">
+              <a class="contacts__link link" href="mailto:info@devstudio.com">
+                <svg class="contacts__icon" width="16" height="12">
+                  <use href="./images/icons.svg#envelope"></use>
+                </svg>
+                info@devstudio.com</a
+              >
             </li>
-            <li class="site-nav__item">
-              <a href="./portfolio.html" class="site-nav__link link">Портфоліо</a>
+            <li class="contacts__item page-header__contacts">
+              <a class="contacts__link link" href="tel:+380961111111">
+                <svg class="contacts__icon" width="10" height="16">
+                  <use href="./images/icons.svg#smartphone"></use>
+                </svg>
+                +38 096 111 11 11</a
+              >
             </li>
-            <li class="site-nav__item"><a href="" class="site-nav__link link">Контакти</a></li>
           </ul>
-        </nav>
-
-        <ul class="contacts list">
-          <li class="contacts__item page-header__contacts">
-            <a class="contacts__link link" href="mailto:info@devstudio.com">
-              <svg class="contacts__icon" width="16" height="12">
-                <use href="./images/icons.svg#envelope"></use>
-              </svg>
-              info@devstudio.com</a
-            >
-          </li>
-          <li class="contacts__item page-header__contacts">
-            <a class="contacts__link link" href="tel:+380961111111">
-              <svg class="contacts__icon" width="10" height="16">
-                <use href="./images/icons.svg#smartphone"></use>
-              </svg>
-              +38 096 111 11 11</a
-            >
-          </li>
-        </ul>
+        </div>
       </div>
     </header>
 
@@ -74,7 +76,7 @@
       <section class="section features">
         <div class="container">
           <h2 class="section__title visually-hidden">Переваги студії</h2>
-          <ul class="features__list list">
+          <ul class="features__list">
             <li class="features__item">
               <div class="features__wrapper">
                 <svg class="features__icon" width="70px" height="70px">
@@ -130,7 +132,7 @@
       <section class="section activity no-padding-top">
         <div class="container">
           <h2 class="section__title">Чим ми займаємося</h2>
-          <ul class="activity__list list">
+          <ul class="activity__list">
             <li class="activity__item">
               <div class="activity__wrapper">
                 <img
@@ -175,7 +177,7 @@
       <section class="section team">
         <div class="container">
           <h2 class="section__title">Наша команда</h2>
-          <ul class="team__list list">
+          <ul class="team__list">
             <li class="team__item">
               <img
                 class="team__image"
@@ -187,7 +189,7 @@
               <div class="team__inner">
                 <h3 class="team__subtitle">Ігор Дем'яненко</h3>
                 <p class="team__desc" lang="en">Product Designer</p>
-                <ul class="social-list list">
+                <ul class="social-list">
                   <li class="social-list__item">
                     <a href="" class="social-list__link">
                       <svg class="social-list__icon" width="20px" height="20px">
@@ -230,7 +232,7 @@
               <div class="team__inner">
                 <h3 class="team__subtitle">Ольга Рєпіна</h3>
                 <p class="team__desc" lang="en">Frontend Developer</p>
-                <ul class="social-list list">
+                <ul class="social-list">
                   <li class="social-list__item">
                     <a href="" class="social-list__link">
                       <svg class="social-list__icon" width="20px" height="20px">
@@ -273,7 +275,7 @@
               <div class="team__inner">
                 <h3 class="team__subtitle">Микола Тарасов</h3>
                 <p class="team__desc" lang="en">Marketing</p>
-                <ul class="social-list list">
+                <ul class="social-list">
                   <li class="social-list__item">
                     <a href="" class="social-list__link">
                       <svg class="social-list__icon" width="20px" height="20px">
@@ -316,7 +318,7 @@
               <div class="team__inner">
                 <h3 class="team__subtitle">Михайло Єрмаков</h3>
                 <p class="team__desc" lang="en">UI Designer</p>
-                <ul class="social-list list">
+                <ul class="social-list">
                   <li class="social-list__item">
                     <a href="" class="social-list__link">
                       <svg class="social-list__icon" width="20px" height="20px">
@@ -356,7 +358,7 @@
       <section class="section clients">
         <div class="container">
           <h2 class="section__title">Постійні клієнти</h2>
-          <ul class="clients__list list">
+          <ul class="clients__list">
             <li class="clients__item">
               <a href="" class="clients__link">
                 <svg class="clients__icon" width="106px" height="60px">
@@ -406,100 +408,102 @@
 
     <!-- Footer -->
     <footer class="page-footer">
-      <div class="container page-footer__container">
-        <div class="page-footer__content">
-          <div class="page-footer__wrapper">
-            <a class="logo link page-footer__logo" href=""
-              ><span class="logo--accent">Web</span>Studio</a
-            >
-
-            <address class="address">
-              <p class="address__text">м. Київ, пр-т Лесі Українки, 26</p>
-              <ul class="contacts list page-footer__contacts">
-                <li class="contacts__item">
-                  <a class="contacts__link page-footer__email link" href="mailto:info@devstudio.com"
-                    >info@devstudio.com</a
-                  >
+      <div class="container">
+        <div class=" page-footer__container">
+          <div class="page-footer__content">
+            <div class="page-footer__wrapper">
+              <a class="logo link page-footer__logo" href=""
+                ><span class="logo--accent">Web</span>Studio</a
+              >
+  
+              <address class="address">
+                <p class="address__text">м. Київ, пр-т Лесі Українки, 26</p>
+                <ul class="contacts page-footer__contacts">
+                  <li class="contacts__item">
+                    <a class="contacts__link page-footer__email link" href="mailto:info@devstudio.com"
+                      >info@devstudio.com</a
+                    >
+                  </li>
+                  <li class="contacts__item">
+                    <a class="contacts__link link" href="tel:+380961111111">+38 096 111 11 11</a>
+                  </li>
+                </ul>
+              </address>
+            </div>
+  
+            <div class="subscribe">
+              <p class="subscribe__subtitle">приєднуйтесь</p>
+              <ul class="social-list">
+                <li class="social-list__item">
+                  <a href="" class="social-list__link social-list__link--background">
+                    <svg
+                      class="social-list__icon"
+                      width="20px"
+                      height="20px"
+                    >
+                      <use href="./images/icons.svg#instagram"></use>
+                    </svg>
+                  </a>
                 </li>
-                <li class="contacts__item">
-                  <a class="contacts__link link" href="tel:+380961111111">+38 096 111 11 11</a>
+                <li class="social-list__item">
+                  <a href="" class="social-list__link social-list__link--background">
+                    <svg
+                      class="social-list__icon"
+                      width="20px"
+                      height="20px"
+                    >
+                      <use href="./images/icons.svg#twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-list__item">
+                  <a href="" class="social-list__link social-list__link--background">
+                    <svg
+                      class="social-list__icon"
+                      width="20px"
+                      height="20px"
+                    >
+                      <use href="./images/icons.svg#facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-list__item">
+                  <a href="" class="social-list__link social-list__link--background">
+                    <svg
+                      class="social-list__icon"
+                      width="20px"
+                      height="20px"
+                    >
+                      <use href="./images/icons.svg#linkedin"></use>
+                    </svg>
+                  </a>
                 </li>
               </ul>
-            </address>
+            </div>
           </div>
-
-          <div class="subscribe">
-            <p class="subscribe__subtitle">приєднуйтесь</p>
-            <ul class="social-list list">
-              <li class="social-list__item">
-                <a href="" class="social-list__link social-list__link--background">
-                  <svg
-                    class="social-list__icon"
-                    width="20px"
-                    height="20px"
-                  >
-                    <use href="./images/icons.svg#instagram"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="social-list__item">
-                <a href="" class="social-list__link social-list__link--background">
-                  <svg
-                    class="social-list__icon"
-                    width="20px"
-                    height="20px"
-                  >
-                    <use href="./images/icons.svg#twitter"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="social-list__item">
-                <a href="" class="social-list__link social-list__link--background">
-                  <svg
-                    class="social-list__icon"
-                    width="20px"
-                    height="20px"
-                  >
-                    <use href="./images/icons.svg#facebook"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="social-list__item">
-                <a href="" class="social-list__link social-list__link--background">
-                  <svg
-                    class="social-list__icon"
-                    width="20px"
-                    height="20px"
-                  >
-                    <use href="./images/icons.svg#linkedin"></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="newsletter">
-          <div class="newsletter__wrapper">
-            <label class="newsletter__label" for="newsletter_email"
-              >Підпишіться на розсилку</label
-            >
-            <input
-              id="newsletter_email"
-              class="newsletter__input"
-              type="email"
-              name="newsletter"
-              placeholder="E-mail"
-            />
-          </div>
-
-          <div class="newsletter__wrapper newsletter__wrapper--flex-end">
-            <button class="button newsletter__button">
-              Підписатися
-              <svg class="button__icon--send" width="24px" height="24px">
-                <use href="./images/icons.svg#send"></use>
-              </svg>
-            </button>
+  
+          <div class="newsletter">
+            <div class="newsletter__wrapper">
+              <label class="newsletter__label" for="newsletter_email"
+                >Підпишіться на розсилку</label
+              >
+              <input
+                id="newsletter_email"
+                class="newsletter__input"
+                type="email"
+                name="newsletter"
+                placeholder="E-mail"
+              />
+            </div>
+  
+            <div class="newsletter__wrapper newsletter__wrapper--flex-end">
+              <button class="button newsletter__button">
+                Підписатися
+                <svg class="button__icon--send" width="24px" height="24px">
+                  <use href="./images/icons.svg#send"></use>
+                </svg>
+              </button>
+            </div>
           </div>
         </div>
       </div>
